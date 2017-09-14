@@ -1,1314 +1,818 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-/* RESET CSS BEGIN */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/*RESET CSS END*/
-
-
-/* HELPER CLASSES BEGIN */
-.border{
-    border:1px solid black;
-}
-.alignLeft {
-    float: left;
-}
-
-.alignRight {
-    float: right;
-}
-
-.margin-bottom-10 {
-    margin-bottom: 10px;
-}
-
-.margin-bottom-20 {
-    margin-bottom: 20px;
-}
-
-.margin-bottom-30 {
-    margin-bottom: 30px;
-}
-
-.margin-bottom-40 {
-    margin-bottom: 40px;
-}
-
-strong,
-b {
-    font-weight: 700;
-}
-
-em,
-i {
-    font-style: italic;
-}
-
-p,
-ul li,
-ol li {
-    font-size: 17px;
-    line-height: 24px;
-}
-
-/*HELPER CLASSES END*/
-
-
-/* GENERAL RULES*/
-* {
-   box-sizing: border-box; 
-}
-
-/* top starts */
-
-.container{
-    max-width:1017px;
-    width:100%;
-    margin:0 auto;
-}
-#top{
-    width: 100%;
-    height: 35px;
-    border-top: 4px solid #b317a9;
-    border-bottom: 2px solid lightgray;
-}
-
-
-#top .container{
-    display: flex;
-    justify-content: space-between;
-}
-.top-left{
-    min-width: 460px;
-    height: 100%;
-}
-.top-left ul a li{
-    display: inline-block;
-    font-size: 14px;
-
-}
-.top-left ul a{
-    text-decoration: none;
-    color:#a8a8a8;
-}
-.top-right{
-    width:265px;
-    height: 100%;
-}
-.top-right a i{
-    color:gray;
-	display:inline-block;
-    }
-	
-	.top-left a{
-		padding-left:5px;
-		display:inline-block;		
-	}
-	
-	
-	
-.top-right a{
-    text-decoration: none;
-
-}
-.top-right a:hover i{
-    color:red;
-}
-.top-right input[type=text]{
-    width:90px;
-    height: 28px;
-    padding-left: 10px;
-}
-
-.search-icon{
-    width:30px;
-    height: 28px;
-    position: relative;
-    color:white !important;
-}
-.my-search{
-    background-color: #b317a9;
-    padding:6px 5px;
-}
-/*top ends */
-#nebras .container{
-    position: relative;
-    margin-top: 65px;
-}
-.nebras{
-    position: absolute;
-    top:0;
-    left:40%;
-    right:50%;
-    font-size: 62px;
-    font-family: sans-serif;
-    color: #444444;
-}
-
-#sahifa{
-    width:100%;
-    height: 100px;
-    margin-top: 155px;
-}
-.sahifa{
-    width:730px;
-    height: 90px;
-    background-color: #2d2d2d;
-    margin:0 auto;
-    font-family: sans-serif;
-    text-align: center;
-    padding-top: 25px;
-}
-
-.sahifa-text{
-    color: white;
-    font-size: 35px;
-
-}
-.sahifa-text1{
-    color: #aaaaaa;
-    font-size: 24px;
-    font-style: italic;
-}
-.sahifa-text2{
-    color:orange;
-    font-size: 29px;
-}
-
-.sahifa-link{
-    color:#723813;
-    background-color: #f5cd49;
-    padding:10px 20px;
-    text-decoration: none;
-    margin-left: 15px;
-    border-radius: 5px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-.sahifa-link:hover{
-    background: #d2b03f;
-}
-
-
-/* navbar starts */
-#navbar{
-    width:100%;
-    height: 50px;
-    border-bottom: 5px solid #b317a9;
-    background-color: #2d2d2d;
-
-
-}
-
-
-.nav{
-    max-width: 740px;
-}
-
-
-.nav a{
-	position:relative;
-	top:-7px;
-    text-decoration: none;
-    color:white;
-    display: inline-block;
-    width:92px;
-  
-    font-family: sans-serif;
-    font-size: 16px;
-    text-align: center;
-	padding-top: 12px;
-	padding-bottom:8px;
-}
-.active1{
-	
-	
-}
-
-
-.nav a:hover{
-    color:black;
-    background: #d637cc;
-}
-.nav a li span{
-    margin-right: 5px;
-}
-
-.nav a li span:hover{
-     color:black;
-    background: white;
-}
-/* nav ends */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body starts here */
-
-
-section{
-    width: 1012;
-    height: 2190;
-    margin: 10px auto;
-   
-}
-
-
-.b-i{
-    display: flex;
-
-}
-
-.breaking{
-    
-    display: inline-block;
-    padding: 15px 9px;;
-    width: 160px;
-    background-color: #f43d2b;
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-}
-.iphon{
-    width: 84%;
-    height: 41px;
-    float: right;
-    box-shadow: 0px 0px 0px 2px lightgray;
-    margin-right: 2px;
-	margin-top:2px;
-	
-}
-
-.iphon b{
-    display: inline-block;
-    padding: 12px; 
-    
-}
-.images{
-    
-    margin: 35px 0px;
-  
-    
-}
-
-
-.big-img1{
-    width: 100%;
-    height: 215px;
-    display: flex;
-}
-.img{
-    width: 50%;
-    height: 215px;
-    margin: 1px;
-	
-}
- img{
-    width: 100%;
-    height: 215px;
-}
-
-
-.text{
-    padding: 15px 18px;;
-    height: 35px;
-color: white;
-position: relative;
-bottom: 90px;
-    background: linear-gradient();
-	width:90%;
-}
-.cites{
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 12px;
-    padding: 6px;
-    display: inline-block;
-
-
-}
-.text p{
-    padding-top: -8px;
-    font-family: sans-serif;
-    font-size: 17px;
-}
-.m-cta{
-    width: 100%;
-    height: 1640px;
-    margin-top: -25px;
-   display: flex;
-}
-
-
-
-.cta{
-    width: 62%;
-    height: 1640px;
-   
-}
-.asid{
-    width: 34%;
-    height: 1600px;
-    margin-left: 36px;
-}
-.world-cta{
-	padding-top:5px;
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-
-
-.world-text b{
-font-size: 20px;
-    font-family: sans-serif;
-    font-weight: 700;
-    
-}
-.world{
-    width: 90%;
-    height: 12px;
-    box-shadow: 0px 0px 0px 2px lightgray;
-    margin-left: 7px;
-	margin-top:3px;
-	background:repeating-linear-gradient(
-	45deg,
-	white,
-	lightgray 2px,
-	#ccc 4px,
-    #f2f2f2 2px
-	
-	);
-}
-.people-cta{
-    width: 100%;
-    height: 365px;
-    display: flex;
-       border-bottom: 4px solid  #a617a7;
-    box-shadow: 0px 0px 0px 1px lightgray;
-    margin-top: 5px;
-	
-
-}
-.people{
-    width: 48%;  
-	
-	
-}
-.p-image{
-    width: 98%;
-    height: 175px;
-    padding: 14px 11px;
-}
-.p-pra{
-    font-family: sans-serif;
-    
-    padding-left:10px;
-    padding-bottom: 2px;
-	
-   
-    
-}
-.p-span{
-    display: block;
-    font-family: sans-serif;
-    font-size: 15px;
-    padding: 3px 10px;
-	color:#0d0d0d;
-	line-height:20px;
-}
-.p-button{
-    display: inline-block;
-    background-color: #a617a7;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px 7px; 
-    font-family: sans-serif;
-    border-radius: 3px;
-}
-.cite{
-    color:#262626;
-    padding: 8px 10px;;
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 13px;
-
-}
-.search-engine{
-    width: 50%;
-    height: 305px;
-    background-color: #f7f7f7;
-    box-shadow:0px 0px 0px 2px lightgray;
-margin-left:12px;
-}
-.small-search{
-    width: 99%;
-    height: 70px;
-    position: relative;
-    border-bottom: 1px solid lightgray;
-	
-}
-.cta-pra span{
-    
-    display: inline-block;
-   padding-top: -5px;
-    line-height: 25px;
-	
-}
-
-
-
-.top-pra{
-    text-align: center;
-    position: relative;
-    padding-top: 15px;
-    font-family: sans-serif;
-    font-size: 15px;
-	padding-bottom:-5px;
-}
-.search-image{
-    
- display: flex;
-    width:100%;
-    height: 97px;
-    background-color: #f7f7f7;
-    border-bottom: 1px solid gray;
-	
-	
-}
-.search-image .cite{
-     margin-left:-13px;	
-	 margin-top:-1px;
-
-}
-
-
-
-.search-image img{
-    width:116px;
-    height: 93px;
-    padding: 14px 14px;;
-    float: left;
-	
-}
-.search-image span{
-   margin-top: 10px;
-    font-size: 15px;
-    font-family: sans-serif;
-    display: inline-block;
-	line-height:23px;
-}
-
-.font-big span{
-    font-size: 17px;
-
-    padding-bottom: -4px;
-    
-}
-
-
-
-
-.fashion{
-    width: 100%;
-    margin-top: 40px;
-    height: 560px;
-    display: flex;
-}
-.fashion-helper{
-        border-bottom: 4px solid  #a617a7;
-    width: 100%;
-	 border-bottom: 4px solid #b317a9;
-	
-}
-.people-helper{
-    
-   
-    
-}
-
-.photography{
-    width: 50%;
-    height: 388px;
-     margin-left: 8px;
-     border-bottom: 4px solid  #a617a7;
-}
-.car{
-    margin-top: 8px;
-   
-   
-    
-}
-.scrolling{
-    width: 100%;
-    height: 290px;
-      border-bottom: 4px solid  #a617a7;
-    margin-top: 40px;
-    
-}
-.scroll-cta{
-    width: 100%;
-    height: 260px;
-    float: left;
-    display: flex;
-
-box-shadow: 0px 0px 1px 1px lightgray;
-    margin-top: 6px;
-    
-}
-.scroll-cta div{
-    width: 50%;
-    height: 263px;
-    
-}
-.scroll-cta .size{
-	width:53%;
-	margin-left:15px;
-	
-}
-.scroll-cta .my-size{
-	width:45%;
-}
-.scroll-cta .cta-pra{
-    width: 100%;
-	
-}
-.scroll-cta .cta-pra span{
-    display: inline-block;
-    padding: 30px 7px;
-    line-height: 22px;
-    margin-bottom: -28px;
-	font-size:16px;
-}
-
-.scroll-cta .people{
-    width: 100%;
-}
-.scroll-cta .people img{
-    width: 90%;
-    height: 110px;
-    padding: 22px 10px;
-    margin-bottom: -18px;
-}
-.p1-pra{
-	display:inline-block;
-	margin-left:10px;
-	width:86%;
-}
-
-
-.scroll-cta .people p{
-    font-size: 16px;
-    font-weight: 500px;
-}
-.image-cta1{
-	
-	
-	height:250px;
-	
-}
-
-.image-cta1 img{
-  padding-top:20px;
-    padding-left: 14px;
-    padding-right: 5px;
-	height:240px;
-	
-	
-}
-
-.image-cta2{
-  height: 100px;
-	margin-left:-1px;
-}
-.image-cta2 div{
-    height: 100px;
-    width: 100%;
-	
-}
-.image-cta2 img{
-	margin-left:-2px;
-
-	
-}
-.f{
-    margin-top: 20px;
-}
-.s{
-margin-top: -28px;
-}
-.image-cta2 img{
-    width: 22.9%;
-    height: 70px;
-}
-
-
-
-/* aside setting starts here */
-
-.hello-world{
-    width: 319px;
-    height: 365px;
-    border:1px solid lightgray;
-    border-bottom: 4px solid #b317a9;
-    margin:0 auto;
-    font-family: sans-serif;
-    margin-bottom: 40px;
-}
-
-.hello-top{
-    width:100%;
-    height: 47px;
-    background-color: #f7f7f7;
-    border-bottom: 3px solid #eaeaea;
-}
-.hello-top-active{
-    background-color: #fff;
-    border: 2px solid lightgray;
-    border-bottom: 1px solid #fff;
-    border-radius: 2px;
-
-}
-.hello-top ul a{
-    text-decoration: none;
-    color:black;
-    font-family: calibri;
-    display: inline-block;
-    width:75px;
-    text-align: center;
-    padding:5px 0;
-    margin-top: 13px;
-    border: 1px solid #f7f7f7;
-}
-.hello-top ul a:hover{
-    background-color: #fff;
-    border: 1px solid lightgray;
-    border-bottom: 1px solid #fff;
-    border-radius: 2px;
-
-}
-
-.hello-world .contact-news img{
-    width:90px;
-    height: 65px;
-    float: left;
-}
-.hello-world .contact-news{
-    padding-left: 10px;
-    border-bottom: 1px solid lightgray;
-    height: 75px;
-    padding-top: 10px;
-}
-/*facebook starts */
-
-.facebook{
-    width:315px;
-    height: 350px;
-    font-family: sans-serif;
-    margin:0 auto;
-
-}
-.facebook .world-cta{
-    margin-bottom: 10px;
-}
-.facebook .world-cta .world{
-    width:120px;
-}
-.facebook .world-cta .world-text b{
-    width:300px;
-    font-size: 16px;
-}
-
-.facebook-inside{
-    border:1px solid lightgray;
-    height: 300px;
-    border-bottom: 4px solid #b317a9;
-    padding:5px;
-}
-.tie{
-    width:100%;
-    height: 130px;
-    background:url('../img/a.jpg') 100% center;
-    background-size: cover;
-   background-origin: content-box;
-   margin:0 auto;
-   color:white;
-  
-  
-
-}
-.tie img{
-    padding-left:20px;
-    padding-top: 20px;
-    width:70px;
-    height: 65px;
-    float: left;
-padding-right:4px;
-}
-.tie h1,.tie span{
-    padding-top: 20px;
-}
-.tie a{
-    text-decoration: none;
-    padding:10px 20px;
-    color:#FFF;
-    clear: both;
-    background-color: #e1ddec;
-
-
-}
-.like-page{
-    position: relative;
-    top:40px;
-    left:10px;
-}
-.shop-now{
-    position: relative;
-    top:5px;
-    left: 10px;
-	
-}
-
-
-.tie a.like-page,.tie a.shop-now{
- color:black;
-
-}
-
-.thumbnail{
-    margin-top: 10px;
-    padding-bottom:  25px;
-    box-shadow: 0px 0px 1px 1px lightgray;
-}
-.thumb{
-    width:90%;
-    height: 40px;
-    margin:0 auto;
-}
-.thumb img{
-    width:15%;
-    height: 100%;
-    cursor: pointer;
-    margin-top: 5px;
-}
-/*facebook ends */
-
-/*social media starts */
-.social {
-    display: flex;
-    width: 73%;
-    height: 40px;
-    margin:30px auto;
-    justify-content: space-around;
-}
-.social a div{
-width:32px;
-height: 75%;
-padding:7px;
-border-radius: 3px;
-
-}
-.social  a div span{
-    color: white;
-}
-.s1{background-color: #f7be29;}
-.s2{background-color: #3b59a1;}
-.s3{background-color: #44afe5;}
-.s4{background-color: #e00605;}
-.s5{background-color: #d8769f;}
-.s6{background-color: #109cd7;}
-.s7{background-color: #3898ef;}
-
-
-/*social media ends */
-
-
-/*sahifa star starts */
-.sahifa-star{
-    width:300px;
-    height: 250px;
-    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url('../img/news12.jpg');
-    color:white;
-    text-align: center;
-    padding:30px;
-    font-family: sans-serif;
-    margin:0 auto;
-}
-.s-first{
-    font-size: 45px;
-}
-.s-first i{
-    color:orange;
-    font-style: normal;
-}
-.sahifa-star p{
-    display: block;
-}
-.sahifa-star .fa-star{
-    color:yellow;
-
-}
-.sahifa-star-bellow{
-    display: inline-block;
-    background: orange;
-    margin-top: 72px;
-    width:300px;
-    height: 40px;
-    margin-left: -30px;
-    padding:15px 0 ;
-    font-weight: 600;
-}
-.arrow{
-    padding:10px 15px;
-    background: #c95cc2;
-    width:50px;
-    height: 50px;
-    position: absolute;
-    right:10px;
-    border-radius: 4px;
-    color:white;
-
-}
-.arrow:hover{
-    cursor: pointer;
-    background: #ea6dd2;
-    color:#000;
-}
-/*sahifa star ends*/
-
-/*Youtube starts*/
-
-.youtube{
-    width:310px;
-    height: 150px;
-    margin:0 auto;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-.youtube-top{
-    font-size: 16px;
-    width:100%;
-    height: 15%;
-}
-.youtube-top span{
-    float: left;
-}
-.youtube-striped{
-    width:70px;
-    height: 14px;
-    float: left;
-      background: repeating-linear-gradient(
-  45deg,
-  #fff,
-  #ccc 4px,
-  #fff 4px
-);
-
-
-}
-.youtube-inside{
-    border:1px solid lightgray;
-    border-bottom: 4px solid #b317a9;
-    width:100%;
-    height: 85%;
-}
-
-
-.y-i{
-    width:90%;
-    height: 50%;
-    border:1px solid black;
-    margin:10px auto;
-}
-.y-i p{
-    font-size: 13px;
-}
-.y-i a{
-    text-decoration:none;
-    color:white;
-    background: red;
-    padding:5px 10px;
-    position: relative;
-    bottom: 4px;  
-    border-radius: 3px;  
-    left: 2px;
-}
-.right-youtube{
-    color:white;
-    background: red;
-    position: relative;
-    left: 110px;
-    padding: 2px 8px;
-    bottom: 3px;
-    border-radius: 3px;
-
-}
-/*Youtube ends*/
-
-/*login starts*/
-.login{
-    width:311px;
-    height: 210px;
-    margin:30px auto;
-    border:1px solid  white;
-}
-.login-inside{
-    width:100%;
-    height: 190px;
-    margin:20px auto;
-    border:1px solid white;
-    box-shadow: 0px 0px 0px 1px lightgray;
-    padding:20px;
-    border-bottom: 4px solid #b317a9;
-}
-.login span{
-    font-size: 17px;
-    font-family: 'arial';
-    float: left;
-}
-.login-striped{
-    width:250px;
-    height: 14px;
-    float: left;
-    background: repeating-linear-gradient(
-      45deg,
-      #fff,
-      #ccc 4px,
-      #fff 4px
-    );
-
-}
-.login-inside a{
-    padding:11px;
-    background-color: #b317a9;
-    color:white;
-    text-decoration: none;
-    position: relative;
-    top:10px;
-    border-radius: 4px;
-    font-family: arial;
-    float: left;
-}
-.login-inside label{
-    float: left;
-    margin-left: 20px;
-    position: relative;
-    top:15px;
-    font-family: arial;
-    font-size: 14px;
-}
-.login-inside a:hover{
-    background-color: #93168b;
-}
-.login-inside-input{
-    width:265px;
-    height: 30px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    border:1px solid lightgray;
-    padding-left: 10px;
-
-}
-span.login-lost{
-    clear: both;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #777;
-    cursor: pointer;
-}
-
-/*login ends*/
-
-
-
-
-
-/* aside setting ends here */
-
-
-
-
-/* aside setting ends here */
-
-
-
-
-
-
-
-
-/*body ends here */
-
-/* Contact part */
-#contact{
-    width:100%;
-    height: 600px;
-    border-top: 6px solid #b317a9;
-    background-color: #333333;
-    margin-top: 50px;
-    margin-bottom: -20px;
-    border-bottom: 1px solid lightgray;
-    font-family: sans-serif;
-    overflow: hidden;
-}
-#contact .container{
-    padding:30px 5px;
-    color: #dddddd;
-    display: flex;
-    justify-content: space-between;
-}
-.popular{
-    width:39%;
-    height: 100%;
-}
-.popular img{
-    width:100px;
-    height: 70px;
-    float: left;
-}
-.popular h1{
-    font-size: 18px;
-    color:white;
-    border-bottom: 1px solid #999;
-    padding-bottom: 20px;
-}
-
-/*contact news */
-.contact-news{
-    width:100%;
-    height: 75px;
-    border-bottom: 1px solid gray;
-    font-family: "calibri";
-}
-
-.contact-news2{
-	
-	 width:100%;
-    height: 105px;
-    border-bottom: 1px solid gray;
-    font-family: "calibri";
-	
-	
-}
-
-.contact-news2 img{
-	width:105px;
-	 margin-right: 10px;
-    cursor: pointer;
-	height:65px;
-	
-}
-
-
-.contact-news1{
-	 width:100%;
-    height: 53px;
-    border-bottom: 1px solid gray;
-    font-family: "calibri";
-	
-	
-	
-}
-.contact-news img{
-    margin-right: 10px;
-    cursor: pointer;
-	height:65px;
-}
-.contact-news p{
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.contact-news2 p{
-	 font-size: 18px;
-    cursor: pointer;
-	line-height:20px;
-	margin-top:3px;
-	
-	
-}
-
-
-.contact-news span{
-    font-size: 11px;
-    cursor:pointer;
-}
-
-.contact-news2 span{
-	display:black;
-	position:relative;
-	bottom:-22px;
-	right:116px;
-	font-size:13px;
-}
-
-
-.contact-news1 p{
-	font-size: 15px;
-    cursor: pointer;
-	margin-top:3px;
-}
-.contact-news1 span{
-	 font-size: 11px;
-    cursor:pointer;
-	
-	
-}
-/* contact news ends here */
-
-.random{
-    width:25%;
-    height: 100%;
-}
-#contact .container .popular .contact-news{
-    height: 85px;
-    font-family: sans-serif;
-}
-
-.random h1,.latest h1{
-    font-size: 18px;
-    color:white;
-    border-bottom: 1px solid gray;
-    padding-bottom: 20px;
-    font-family: 'Arial Narrow',;
-
-}
-.random img,.latest img,.popular img{
-    float: left;
-    height: 73px;
-    margin-top: 5px;
-}
-.random .contact-news,.latest .contact-news{
-    height: 110px;
-    margin-bottom: 4px;
-    font-family: sans-serif;
-    
-}
-
-.random .contact-news p,.latest .contact-news p{
-    font-size: 15px;
-    display: block;
-}
-.random .contact-news img,.latest .contact-news img{
-    width:115px;
-
-}
-
-.latest{
-    width:25%;
-    height: 100%;
-
-}
-#contact .container .popular .contact-news,#contact .container .latest .contact-news ,#contact .container .random .contact-news{
-    border-bottom: 1px solid #444;
-}
-/* footer  starts here*/
-
-
-#footer{
-    width:100%;
-    height: 65px;
-    background-color: #2e2e2e;
-    font-family: 'Calibri Light';
-    margin-bottom: -11px;
-
-}
-#footer .container{
-    display: flex;
-    color:#dddddd;
-    justify-content: space-between;
-
-}
-.footer-left,.footer-right{
-    width:470px;
-    height: 10%;
-    margin-top: 20px;
-    font-size: 13px;
-
-}
-.footer-right{
-    display: flex;
-}
-.footer-right .arrow{
-    position: relative;
-    bottom: 10px;
-    left:75px;
-    }
-.footer1{
-    padding-top: 8px;
-    margin-right: 20px;
-}
-.footer1 a{
-    color:gray;
-    margin-right: 10px;
-}
-.footer1 a:hover{
-    color:white;
-}
-.footer-right p{
-    font-size: 13px;
-}
-
-
-
-
-
-
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blueprint</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- character encoding -->
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <!-- Display webpage in edge mode/IE in highest supported document mode -->
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Optimizations for mobile devices -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <!-- Google fonts -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"</script>
+        <![endif]-->
+</head>
+
+<body>
+
+
+    <div id="top">
+        <div class="container">
+            <div class="top-left">
+                <ul>
+                    <a href="#">
+                        <li>SUNDAY, AUGUST 20 2017 |</li>
+                    </a>
+                    <a href="#">
+                        <li>Advertisement</li>
+                    </a>
+                    <a href="#">
+                        <li style="margin-top:5px;">Dropdown</li>
+                    </a>
+                    <a href="#">
+                        <li>Page/post Elements</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="top-right">
+
+                <a href="#" class="top-right-i"><i class="fa fa-cloud  fa-lg"></i>  </a>
+                <a href="#"><i class="fa fa-facebook fa-lg "></i> </a>
+                <a href="#"><i class="fa fa-twitter fa-lg "></i> </a>
+                <a href="#"><i class="fa fa-dribble  fa-lg"></i> </a>
+                <a href="#"><i class="fa fa-pinterest fa-lg "></i> </a>
+                <a href="#"><i class="fa fa-instagram  fa-lg"></i> </a>
+                <input type="text" style="margin-left:4px;" name="search" placeholder="search">
+                <a href="#" class="my-search" style="margin-left:-5px;"><i class="fa fa-search  fa-lg search-icon"></i> </a>
+            </div>
+        </div>
+    </div>
+    <!-- nebras -->
+    <div id="nebras">
+        <div class="container">
+            <div class="nebras">Nebras</div>
+        </div>
+    </div>
+
+
+    <!--sahifa -->
+
+
+    <div id="sahifa">
+        <div class="container">
+            <div class="sahifa"><span class="sahifa-text">SAHIFA</span><span class="sahifa-text1">The Best <span class="sahifa-text2">Wordpress</span> New Theme </span>
+                <a href="#" class="sahifa-link">BUY NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <!--navbar -->
+    <div id="navbar">
+        <div class="container">
+            <div class="nav">
+                <ul>
+
+				 <a href="#" class="active1" style="padding:7px 7px; width:50px; background-color:#d637cc; margin-top:2px;">
+                        <li><span class="fa fa-home fa-2x"></span></li>
+                    </a>
+
+
+
+                    <a href="#">
+                        <li><span class="fa fa-navicon"></span>Layouts</li>
+                    </a>
+                    <a href="#">
+                        <li><span class="fa fa-cogs"></span>Features</li>
+                    </a>
+                    <a href="#">
+                        <li><span class="fa fa-cloud"></span>World</li>
+                    </a>
+                    <a href="#">
+                        <li><span class="fa fa-briefcase"></span>Fashion</li>
+                    </a>
+                    <a href="#">
+                        <li><span class="fa fa-folder"></span>Archives</li>
+                    </a>
+                    <a href="#">
+                        <li><span class="fa fa-play-circle-o"></span>Videos</li>
+                    </a>
+                    <a href="#">
+                        <li><span class="fa fa-book"></span>Shop</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar ends here-->
+    <!--body starts -->
+
+    <section>
+        <div class="container">
+            <div class="b-i">
+                <a href="/" class="breaking">BREAKING NEWS</a>
+                <div class="iphon">
+
+                    <b>iPhone 6 Plus review</b>
+                </div>
+            </div>
+            <div class="images">
+                <div class="big-img1" style="margin:2px;">
+
+                    <div class="img">
+                        <img src="img/f.jpg">
+
+                        <div class="text">
+                            <cite class="cites">November 24, 2014</cite>
+                            <p class="pra">Apple iMac with Retina 5K display reviw</p>
+                        </div>
+
+                    </div>
+                    <div class="img">
+                        <img src="img/d.jpg">
+                        <div class="text">
+                            <cite class="cites">November 24, 2014</cite>
+                            <p class="pra">Apple iMac with Retina 5K display reviw</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="big-img1">
+
+                    <div class="img">
+					
+                        <img src="img/a.jpg">
+                        <div class="text">
+                            <cite class="cites">November 24, 2014</cite>
+                            <p class="pra">Apple iMac with Retina 5K display reviw</p>
+                        </div>
+
+                    </div>
+                    <div class="img">
+                        <img src="img/b.jpg">
+                        <div class="text">
+                            <cite class="cites">November 24, 2014</cite>
+                            <p class="pra">Apple iMac with Retina 5K display reviw</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="img/c.jpg">
+                        <div class="text">
+                            <cite class="cites">November 24, 2014</cite>
+                            <p class="pra">Apple iMac with Retina 5K display reviw</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="m-cta">
+
+
+
+
+                <div class="cta">
+                    <div class="world-cta">
+                        <div class="world-text">
+                            <b class="bold">world</b>
+                        </div>
+                        <div class="world">
+                        </div>
+                    </div>
+
+                    <div class="people-cta">
+                        <div class="people">
+                            <img class="p-image" src="img/f.jpg">
+                            <p class="p-pra">
+                                13,000+ people Have Bought Our Theme
+                            </p>
+                            <cite class="cite">
+                        Junary 30 2015
+                        </cite>
+                            <span class="p-span">Don't act so suprised, Your Highness, you weren't time. Several....</span>
+                            <a href="#" target="_blank" class="p-button">
+                            Read More ..
+                        </a>
+
+                        </div>
+                        <div class="search-engine">
+                            <div class="small-search">
+                                <p class="top-pra">Top Search Engine Optimization Strateges!</p>
+                                <cite class="cite">
+
+                               <i>&copy</i> Juanuay 26, 2015
+                                </cite>
+
+                            </div>
+                            <div class="small-search">
+                                <p class="top-pra">Top Search Engine Optimization Strateges!</p>
+                                <cite class="cite">
+                                <i>&copy</i>
+                                Juanuay 26, 2015
+                                </cite>
+
+                            </div>
+                            <div class="small-search">
+                                <p class="top-pra">Top Search Engine Optimization Strateges!</p>
+                                <cite class="cite">
+                                <i>&copy</i>
+                                Juanuay 26, 2015
+                                </cite>
+
+                            </div>
+                            <div class="search-image">
+                                <div class="image-img">
+                                    <img src="img/h.jpg">
+                                </div>
+                                <div class="cta-pra">
+                                    <span>20 Way To Sell Your Product Faster</span>
+                                    <cite class="cite"><i>&copy</i>
+                                Juanuay 26, 2015
+                                </cite>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="fashion">
+
+                        <div class="people" >
+                            <div class="fashion-helper">
+
+                                <div class="world-cta">
+                                    <div class="world-text">
+                                        <b class="bold">Fashion</b>
+                                    </div>
+                                    <div class="world">
+                                    </div>
+                                </div>
+								<div style="width:100%; box-shadow:0px 0px 0px 1px lightgray; margin-top:8px; margin-right:8px; height:547px;">
+                                <div class="people-helper">
+                                    <img class="p-image" src="img/f.jpg">
+                                    <p class="p-pra">
+                                        Imagine Losing 20 Pounds In 14 Dasys!
+                                    </p>
+                                    <cite class="cite">
+									<i>&copy</i>
+                       Swptember 24, 2014
+                        </cite>
+                                    <span class="p-span">Don't act so suprised, Your highness mission ths time. Several....</span>
+                                    <a href="#" target="_blank" class="p-button">
+                            Read More ..
+                        </a>
+                                </div>
+
+                                <div class="search-image">
+                                    <div class="image-img">
+                                        <img src="img/h.jpg">
+                                    </div>
+                                    <div class="cta-pra">
+                                        <span>20 Way To Sell Your Product Faster</span>
+                                        <cite class="cite">
+										<i>&copy</i>
+                                Juanuay 26, 2015
+                                </cite>
+                                    </div>
+                                </div>
+                                <div class="search-image">
+                                    <div class="image-img">
+                                        <img src="img/h.jpg">
+                                    </div>
+                                    <div class="cta-pra">
+                                        <span>20 Way To Sell Your Product Faster</span>
+                                        <cite class="cite">
+										<i>&copy</i>
+                                Juanuay 26, 2015
+                                </cite>
+                                    </div>
+                                </div>
+                            </div>
+							</div>
+                        </div>
+
+                        <div class="photography">
+
+                            <div class="world-cta">
+                                <div class="world-text">
+                                    <b class="bold">Photography</b>
+                                </div>
+                                <div class="world">
+                                </div>
+                            </div>
+							<div style="width:100%; box-shadow:0px 0px 0px 1px lightgray; margin-top:8px;">
+                            <div class="car">
+
+                                <p class="p-pra" style="height:60px;">
+                                 <p style="padding:12px; margin-left:10px; padding-bottom:1px; margin-bottom:-4px; font-size:18px; font-family:sans-serif; margin-top:-45px;"> Used Car Dealer Sales Tricks Exposed  </p>
+                                </p>
+                                <cite class="cite margin-do">
+								<i>&copy</i>
+                        Junary 30 2015
+                        </cite>
+                                <span class="p-span margin-do">Don't act so suprised,in any mercy mission ths time. Several....</span>
+                                <a href="#" target="_blank" class="p-button margin-do" style="margin-left:10px;">
+                            Read More ..
+                        </a>
+
+                            </div>
+
+                            <div class="search-image">
+                                <div class="image-img margin-do">
+                                    <img src="img/h.jpg">
+                                </div>
+                                <div class="cta-pra margin-do">
+                                    <span style="margin-left:-10px;">Ten Reason To Start Yuour Own Profitable WebSies!</span>
+                                    <cite class="cite" style="margin-left:-10px; padding-left:1px;">
+									<i>&copy</i>
+                                Juanuay 26, 2015
+                                </cite>
+                                </div>
+                            </div>
+
+                            <div class="search-image">
+                                <div class="image-img" style="margin-right:5px;">
+                                </div>
+                                <div class="cta-pra font-big">
+                                    <span class="margin-do" style="padding-left:6px; line-height:28px;">10,000 Web Sit Visitors In One Monght:Guaranteed</span>
+                                    <cite class="cite margin-do" style="margin-left:3px;" >
+									<i>&copy</i>
+                                Juanuay 26, 2015
+                                </cite>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="scrolling">
+                        <div class="world-cta">
+                            <div class="world-text">
+                                <b class="bold">Scrolling block</b>
+                            </div>
+                            <div class="world" style="width:75%;">
+                            </div>
+
+                        </div>
+
+                        <div class="scroll-cta">
+
+
+                            <div>
+                                <div class="cta-pra size">
+                                    <span style="my-pra">New! A Stain Remover That Like Magic </span>
+                                    <cite class="cite" style="margin-left:-5px;">
+									<i>&copy</i>
+                                Juanuay 26, 2015
+                                </cite>
+                                </div>
+                            </div>
+                            <div class="my-size">
+                                <div class="people">
+                                    <img class="p-image" src="img/f.jpg">
+                                    <p class="p1-pra">
+                                        Simple Way to reduce in Your wirnkless
+                                    </p>
+                                    <cite class="cite">
+									<i>&copy</i>
+                        Junary 30 2015
+                        </cite>
+
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="my-size">
+                                <div class="people">
+                                    <img class="p-image" src="img/f.jpg">
+                                    <p class="p1-pra" style="font-size:17px;">
+                                        Unlock The Secers Of Selling Items
+                                    </p>
+                                    <cite class="cite">
+									<i>&copy</i>
+                    April 24, 2014
+                        </cite>
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="scrolling">
+                        <div class="world-cta">
+                            <div class="world-text">
+                                <b class="bold">NEW IN PICTURE</b>
+                            </div>
+                            <div class="world" style="width:72%;">
+                            </div>
+
+                        </div>
+                        <div class="scroll-cta">
+                            <div class="image-cta1">
+                                <img src="img/d.jpg">
+                            </div>
+
+                            <div class="image-cta2">
+                                <div class="f">
+                                    <img src="img/d.jpg">
+                                    <img src="img/d.jpg">
+                                    <img src="img/d.jpg">
+                                    <img src="img/d.jpg">
+                                </div>
+                                <div class="s">
+                                    <img src="img/d.jpg">
+                                    <img src="img/d.jpg">
+                                    <img src="img/d.jpg">
+                                    <img src="img/d.jpg">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <!-- aside starts here -->
+ <div class="asid">
+
+                <div class="hello-world">
+                    <div class="hello-top">
+                        <ul>
+                            <a href="#"><li>Recent</li></a>
+                            <a href="#" class="hello-top-active"><li>Popular</li></a>
+                            <a href="#"><li>Comments</li></a>
+                            <a href="#"><li>Tags</li></a>
+                        </ul>
+                    </div>
+                   <div class="small-search">
+                                <p class="top-pra" style="font-size:20px; text-align:left; margin-left:15px;">Hello World!</p>
+                                <cite class="cite">
+
+                               <i>&copy</i> Juanuay 26, 2015
+                                </cite>
+
+                            </div>
+
+                <div class="search-image" style="background-color:white;">
+                                <div class="image-img">
+                                    <img src="img/h.jpg">
+                                </div>
+                                <div class="cta-pra">
+                                    <span>20 Way To Sell Your Product Faster</span>
+                                    <cite class="cite"><i>&copy</i>
+                                Juanuay 26, 2015
+                                </cite>
+                                </div>
+                            </div>
+
+
+
+                   <div class="small-search">
+                                <p class="top-pra">Top Search Engine Optimization Strateges!</p>
+                                <cite class="cite">
+
+                               <i>&copy</i> Juanuay 26, 2015
+                                </cite>
+
+                            </div>
+
+
+                     <div class="small-search">
+                                <p class="top-pra">Top Search Engine Optimization Strateges!</p>
+                                <cite class="cite">
+
+                               <i>&copy</i> Juanuay 26, 2015
+                                </cite>
+
+                            </div>
+                   
+                </div>
+
+<!--facebook-->
+
+
+                <div class="facebook">
+                     <div class="world-cta">
+                        <div class="world-text">
+                     <b class="bold">FIND US ON FACEBOOK</b>
+                        </div>
+                    <div class="world">
+                        </div>
+
+                    </div>
+                    <div class="facebook-inside">
+                        <div class="tie">
+                            <img src="img/f.jpg">
+                            <h1 style="position:relative: top:10px; left:20px;">TieLabs</h1>
+                            <span>12,641 Likes</span>
+                            <a class="like-page" href="#"><span class="fa fa-briefcase" style=""></span>Shop Now</a>
+                            <a href="#" class="shop-now"><span class="fa fa-facebook"></span>Like Page</a>
+                        </div>
+                        <div class="thumbnail">
+                            <br/>
+                            <div class="thumb">
+                            <h4> Be the first of your friends to like this
+</h4>
+                                <img src="img/a.jpg">
+                                <img src="img/b.jpg">
+                                <img src="img/c.jpg">
+                                <img src="img/d.jpg">
+                                <img src="img/e.jpg">
+                                <img src="img/f.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+<!-- end of facebook -->
+<!--social media icons starts -->
+
+                <div class="social">
+               <a href="#"><div class="s1"><span class="fa fa-foursquare fa-lg"></span></div></a>
+               <a href="#"><div class="s2"><span class="fa fa-facebook fa-lg"></span></div></a>
+               <a href="#"><div class="s3"><span class="fa fa-twitter fa-lg"></span></div></a>
+               <a href="#"><div class="s4"><span class="fa fa-pinterest fa-lg"></span></div></a>
+               <a href="#"><div class="s5"><span class="fa fa-twitter fa-lg"></span></div></a>
+               <a href="#"><div class="s6"><span class="fa fa-foursquare fa-lg"></span></div></a>
+               <a href="#"><div class="s7"><span class="fa fa-instagram fa-lg"></span></div></a>
+                </div>
+<!--social media icons ends -->
+<!--sahifa star starts -->
+
+                <div class="sahifa-star">
+                    <span class="s-first"><i>S</i>ahifa<i>.</i></span>
+                    <p>THE BEST NEW WORDPRESS NEWS THEME</p>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="sahifa-star-bellow">
+                        LOVED BY 15,000+ SATISFIED USERS
+                    </span>
+                </div>
+                <div class="arrow"><span class="fa fa-angle-double-up fa-2x"></span></div>
+ <!--youtube starts -->
+                <div class="youtube">
+                    <div class="youtube-top"><span>SUBSCRIBE TO OUR CHANNEL</span>
+                    <div class="youtube-striped"></div>
+                    </div>
+
+
+
+                    <div class="youtube-inside">
+                        <div class="y-i">
+                            <p>Our 2videos</p>
+                            <a href="#"><span class="fa fa-youtube-play"></span>Subscribe</a>
+                            <span class="fa fa-youtube right-youtube fa-2x"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+ <!--youtube ends --> 
+<!--loginform starts-->   
+
+                <div class="login">
+                    <div class="login-top">
+                        <span>LOGIN</span>
+                        <div class="login-striped"></div>
+                    </div>
+                    <div class="login-inside">
+                        <input type="text" name="username" placeholder="Username" class="login-inside-input">
+                        <input type="password" name="pass" placeholder="Password" class="login-inside-input">
+                        <a href="#">Log in</a>
+                        <label><input type="checkbox" name="rem">Remember me</label>
+                        <span class="login-lost">Lost your password?</span>
+
+
+
+                    </div>
+                </div>
+<!--loginform ends -->              
+                
+            
+            
+             
+<!-- aside ends -->
+
+
+
+              
+                <!-- aside ends -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--body ends -->
+
+
+
+
+  <div id="contact">
+        <div class="container">
+            <div class="popular">
+                <h1>POPULAR POSTS</h1>
+
+                <div class="contact-news">
+                    <img src="img/a.jpg">
+                    <p>13,00+ People Have Bought Our Theme</p>
+                    <span>January 30,2015 <span class="fa fa-comments-o"></span>5</span>
+                </div>
+
+
+
+                <div class="contact-news1">
+                    <p>Which Company Would You Choose?</p>
+                    <span>January 25,2015 <span class="fa fa-comments-o"></span>5</span>
+                </div>
+
+                <div class="contact-news1">
+                    <p>Nexus6 review</p>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span>January 30,2014 <span class="fa fa-comments-o"></span>5</span>
+                </div>
+
+                <div class="contact-news1">
+                    <p>Hello World!</p>
+                    <span>July 19,2017 <span class="fa fa-comments-o"></span>5</span>
+                </div>
+
+                <div class="contact-news">
+                    <img src="img/d.jpg">
+                    <p>Simple Ways To Raduce Your Unwanted Wrinkles!</p>
+                    <span>May 24,2014 <span class="fa fa-comments-o"></span>5</span>
+                </div>
+
+
+
+            </div>
+
+            <div class="random" >
+                <h1>RANDOM POSTS</h1>
+
+
+                <div class="contact-news1">
+                    <p>Scientists Finds Breakthrough Weight!</p>
+                    <span><i>&copy</i>May 24,2014</span>
+                </div>
+
+
+                <div class="contact-news2">
+                    <img src="img/d.jpg">
+                    <p>Ten Reason to start your own proflio Website</p>
+                    <span><i>&copy</i>May 24,2014</span>
+                </div>
+
+
+               
+
+
+                <div class="contact-news2">
+                    <img src="img/d.jpg">
+                    <p>13,000+ People Have Bought Our Theme</p>
+                    <span><i>&copy</i>January 30,2015</span>
+                </div>
+
+
+
+
+                <div class="contact-news2">
+                    <img src="img/h.jpg">
+                    <p>13,000+ People Have Bought Our Theme</p>
+                    <span><i>&copy</i>January 30,2015</span>
+                </div>
+
+                <div class="contact-news2">
+                    <img src="img/a.jpg">
+                    <p>13,000+ People Have Bought Our Theme</p>
+                    <span><i>&copy</i>January 30,2015</span>
+                </div>
+
+            </div>
+
+            <div class="latest">
+
+<h1>LATEST POSTS</h1>
+
+                <div class="contact-news1">
+                    <p>Hello World!</p>
+                    <span><i>&copy</i>May 24,2014</span>
+                </div>
+
+
+                <div class="contact-news2" style="height:90px;">
+                    <img src="img/c.jpg">
+                    <p>13,000+ People Have Bought Our Theme</p>
+                   
+                </div>
+
+
+
+                <div class="contact-news1">
+                    <p>Scientists Finds Breakthrough Weight!</p>
+                    <span><i>&copy</i>May 24,2014</span>
+                </div>
+
+
+
+
+
+               <div class="contact-news1">
+                    <p>Scientists Finds Breakthrough Weight!</p>
+                    <span><i>&copy</i>May 24,2014</span>
+                </div>               
+
+                <div class="contact-news1">
+                    <p>Scientists Finds Breakthrough Weight!</p>
+                    <span><i>&copy</i>May 24,2014</span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+<section id="footer">
+    <div class="container">
+        <div class="footer-left">
+        &copy; Copyright 2017, All Rights Reserved
+        </div>
+
+        <div class="footer-right">
+          <div class="footer1">
+            <a href="#"><span class="fa fa-whatsapp fa-lg"></span></a>
+            <a href="#"><span class="fa fa-facebook fa-lg"></span></a>
+            <a href="#"><span class="fa fa-twitter fa-lg"></span></a>
+            <a href="#"><span class="fa fa-foursquare fa-lg"></span></a>
+          </div>
+          <div class="footer2">
+            <p>powered by wordpress | Designed by Our Corparaction</p>
+         </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Jquery first, then JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
